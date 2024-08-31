@@ -19,3 +19,22 @@ divide x y = x / y
 -- Main function to run the calculator
 main :: IO ()
 main = someFunc
+
+    putStrLn "Welcome to the basic Haskell calculator"
+    putStrLn "Choose an operation: (+, -, *, /)"
+    operation <- getLine
+    putStrLn "Enter the first number:"
+    num1 <- getLine
+    putStrLn "Enter the second number:"
+    num2 <- getLine
+
+    let x = read num1 :: Float
+    let y = read num2 :: Float
+    let result = case operation of
+                    "+" -> add x y
+                    "-" -> subtract x y
+                    "*" -> multiply x y
+                    "/" -> divide x y
+                    _   -> error "Invalid operation"
+
+    putStrLn ("The result is: " ++ show result)
