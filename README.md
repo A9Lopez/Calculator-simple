@@ -75,7 +75,7 @@ The result is: 15.0
 - **Division by Zero:** If a division by zero is attempted, the program will display an error message and terminate the operation.
 - **Negative Square Root:** If the user attempts to calculate the square root of a negative number, the program will display an error message indicating that the operation is not possible.
 
-##Contribution
+## Contribution
 Feel free to contribute to this project by opening issues, suggesting features, or submitting pull requests. Contributions are welcome to improve the functionality and usability of the calculator.
 
 To contribute:
